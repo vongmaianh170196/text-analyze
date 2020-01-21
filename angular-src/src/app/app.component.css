@@ -1,0 +1,9 @@
+.container{
+    height: 100vh;
+    text-align: center;
+}
+form{
+    margin-top: calc(50vh - 7em);
+    margin-left: 50% - 5em;
+    margin-bottom: 2em;
+}

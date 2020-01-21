@@ -1,0 +1,10 @@
+<div class="container">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <input type='text' name="text" [(ngModel)]="text"/>  
+    <input type="submit" value="Submit" class="btn"/>   
+  </form>
+  <div>
+    Result: 
+    <p>{{result | json}}</p>
+  </div>
+</div>
