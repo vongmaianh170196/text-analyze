@@ -417,7 +417,7 @@ const httpOptions = {
 let AddTextService = class AddTextService {
     constructor(http) {
         this.http = http;
-        this.url = 'http://localhost:5000/api/text';
+        this.url = '/analyze';
     }
     addText(text) {
         return this.http.post(this.url, { text: text }, httpOptions);

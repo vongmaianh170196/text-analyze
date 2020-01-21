@@ -11,7 +11,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AddTextService {
-  url:string='/api/text';
+  url:string='/analyze';
   constructor(private http:HttpClient) { }
 
   addText(text:string):Observable<string>{

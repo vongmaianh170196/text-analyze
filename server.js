@@ -9,7 +9,7 @@ app.use(express.json({
     extended: true
 }))
 
-app.post("/api/text", async (req, res) => {
+app.post("/analyze", async (req, res) => {
     let text = req.body.text;
     const textArr = text.toLowerCase().replace(/[0-9\s]/gi, "").split("").sort();
     const withSpaces = text.length;

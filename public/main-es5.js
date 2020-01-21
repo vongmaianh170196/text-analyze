@@ -889,7 +889,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, AddTextService);
 
         this.http = http;
-        this.url = 'http://localhost:5000/api/text';
+        this.url = '/analyze';
       }
 
       _createClass(AddTextService, [{
