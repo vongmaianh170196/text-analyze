@@ -41,14 +41,7 @@ app.post("/api/text", async (req, res) => {
     res.json(result)
 })
 
-if (process.env.NODE_ENV === 'production') {
-    // Set static folder
-    app.use(express.static('client/build'));
-  
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });
-  }
+
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 const port = process.env.PORT || 5000;
