@@ -11,7 +11,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AddTextService {
-  url:string='/analyze';
+  url:string='http://localhost:5000/analyze';
   constructor(private http:HttpClient) { }
 
   addText(text:string):Observable<string>{
