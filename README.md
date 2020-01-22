@@ -1,4 +1,4 @@
-# text-analyze-mean
+# text-analyze
 
 ### Node.js, Angular, Express.js
 
