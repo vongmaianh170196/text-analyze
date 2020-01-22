@@ -11,7 +11,7 @@ app.use(express.json({
 
 app.post("/analyze", async (req, res) => {
     let text = req.body.text;
-    const textArr = text.toLowerCase().replace(/[0-9\s]/gi, "").split("").sort();
+    const textArr = text.toLowerCase().replace(/[0-9-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/\s]/gi, "").split("").sort();
     const withSpaces = text.length;
     const withoutSpaces = text.split(" ").join('').length;
     const wordCount = text.split(/(\s+)/).filter(w => w.trim().length > 0).length;
